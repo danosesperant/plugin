@@ -1,0 +1,26 @@
+{
+    "name": "voiture/plugin-voiture",
+    "description": "plugin CRUD",
+    "type": "library",
+    "licence": "MIT",
+    "version": "1.0.0",
+    "autoload": {
+        "psr-4": {
+            "PluginVoiture\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "PluginVoiture\\Providers\\VoitureServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "filament/filament": "^3.0-stable",
+        "laravel/framework": "^11.31",
+        "spatie/laravel-package-tools": "^1.9"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
